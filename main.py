@@ -8,7 +8,7 @@ from keep import keep_alive
 TOKEN = os.getenv("token")
 
 # Botが動作する特定のチャンネルID
-TARGET_CHANNEL_ID = 1275796834085765204
+TARGET_CHANNEL_ID = int(os.getenv("target_channel_id"))
 
 # Intentsの設定
 intents = discord.Intents.default()
